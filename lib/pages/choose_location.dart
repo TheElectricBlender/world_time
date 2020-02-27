@@ -11,7 +11,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
   List<WorldTime> locations = [
     WorldTime(url: 'Asia/Singapore', location: 'Singapore', flag: 'singapore.png'),
     WorldTime(url: 'Europe/London', location: 'London', flag: 'uk.png'),
-    WorldTime(url: 'Europe/London', location: 'London', flag: 'uk.png'),
     WorldTime(url: 'Europe/Berlin', location: 'Berlin', flag: 'germany.png'),
     WorldTime(url: 'Africa/Cairo', location: 'Cairo', flag: 'egypt.png'),
     WorldTime(url: 'Africa/Nairobi', location: 'Nairobi', flag: 'kenya.png'),
@@ -26,6 +25,12 @@ class _ChooseLocationState extends State<ChooseLocation> {
     await instance.getTime();
 
     //navigate to home screen and pass on data
+    Navigator.pop(context, {
+      'location': instance.location,
+      'flag': instance.flag,
+      'time': instance.time,
+      'isDaytime': instance.isDaytime,
+    });
   }
 
 
