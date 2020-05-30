@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+Simple application to display the time of respective countries around the world.
+
+<img src="https://github.com/TheElectricBlender/world_time/blob/master/assets/screenshot_countries.png" width="360">
+<img src="https://github.com/TheElectricBlender/world_time/blob/master/assets/screenshot_day.png" width="360">
+<img src="https://github.com/TheElectricBlender/world_time/blob/master/assets/screenshot_night.png" width="360">
 
 ## Getting Started
 
